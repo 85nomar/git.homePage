@@ -1,0 +1,163 @@
+/* make it possible to use bootstrap variables & mixins within our custom less */
+/* custom styles */
+/*********************************************************************************************
+* Ricardo Assistant custom variables to be used by Bootstrap
+**********************************************************************************************/
+/* Ricardo fonts path */
+/*********************************************************************************************
+* Bootstrap variables.less from here on
+**********************************************************************************************/
+/*********************************************************************************************
+* Custom Ricardo Font Styles 
+**********************************************************************************************/
+@font-face {
+  font-family: 'MetaOTBold';
+  src: url('/assets/public/fonts/MetaWeb-Bold.eot');
+  src: url('/assets/public/fonts/MetaWeb-Bold.eot?#iefix') format('embedded-opentype'), url("/assets/public/fonts/MetaWeb-Bold.woff") format("woff"), url("/assets/public/fonts/MetaWeb-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MetaOTBook';
+  src: url('/assets/public/fonts/MetaWeb-Book.eot');
+  src: url('/assets/public/fonts/MetaWeb-Book.eot?#iefix') format('embedded-opentype'), url('/assets/public/fonts/MetaWeb-Book.woff') format('woff'), url('/assets/public/fonts/MetaWeb-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MetaOTLight';
+  src: url('/assets/public/fonts/MetaWeb-Light.eot');
+  src: url('/assets/public/fonts/MetaWeb-Light.eot?#iefix') format('embedded-opentype'), url('/assets/public/fonts/MetaWeb-Light.woff') format('woff'), url('/assets/public/fonts/MetaWeb-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend,
+#sideNav {
+  font-family: "MetaOTBold", Georgia, "Times New Roman", Times, serif;
+}
+/*********************************************************************************************
+* Custom Ricardo Font Styles 
+**********************************************************************************************/
+@font-face {
+  font-family: 'MetaOTBold';
+  src: url('/assets/public/fonts/MetaWeb-Bold.eot');
+  src: url('/assets/public/fonts/MetaWeb-Bold.eot?#iefix') format('embedded-opentype'), url("/assets/public/fonts/MetaWeb-Bold.woff") format("woff"), url("/assets/public/fonts/MetaWeb-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MetaOTBook';
+  src: url('/assets/public/fonts/MetaWeb-Book.eot');
+  src: url('/assets/public/fonts/MetaWeb-Book.eot?#iefix') format('embedded-opentype'), url('/assets/public/fonts/MetaWeb-Book.woff') format('woff'), url('/assets/public/fonts/MetaWeb-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MetaOTLight';
+  src: url('/assets/public/fonts/MetaWeb-Light.eot');
+  src: url('/assets/public/fonts/MetaWeb-Light.eot?#iefix') format('embedded-opentype'), url('/assets/public/fonts/MetaWeb-Light.woff') format('woff'), url('/assets/public/fonts/MetaWeb-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend,
+#sideNav {
+  font-family: "MetaOTBold", Georgia, "Times New Roman", Times, serif;
+}
+/*********************************************************************************************
+* custom styles on large desktops
+**********************************************************************************************/
+@media screen and (max-width: 1280px) {
+  .centeredBox {
+    margin: 0 20px;
+  }
+  .floatingToolbar {
+    left: 20px;
+    right: 20px;
+  }
+  .listing-online .floatingToolbar,
+  .listing-aftersales .floatingToolbar {
+    left: calc(16.6% + 20px);
+    right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #rating_detail .modal-dialog {
+    width: 760px;
+    margin-left: -380px;
+  }
+}
+/*********************************************************************************************
+* screens @screen-desktop (which is default bootstrap breakpoint for .col-lg classes
+**********************************************************************************************/
+@media screen and (max-width: 992px) {
+  .floatingToolbar {
+    left: 20px;
+    right: 20px;
+  }
+  .listing-online .floatingToolbar,
+  .listing-aftersales .floatingToolbar {
+    left: 20px;
+  }
+}
+/*********************************************************************************************
+* custom styles on HD desktops 
+**********************************************************************************************/
+@media screen and (min-width: 1720px) {
+  .searchPanel {
+    float: left;
+  }
+}
+/*********************************************************************************************
+* custom styles on tablets
+**********************************************************************************************/
+@media screen and (max-width: 728px) {
+  .toolbar .forminline {
+    margin-top: 10px;
+  }
+  .mainMenu {
+    height: auto;
+  }
+}
+/*********************************************************************************************
+* Slider on homepage on small desktops
+**********************************************************************************************/
+@media screen and (max-width: 1170px) {
+  .carousel-control {
+    display: none;
+  }
+  .sliderContainer .carousel-caption.container {
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 940px) {
+  .sliderContainer .carousel-caption.container {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 728px) {
+  .sliderContainer .carousel-caption.container > div {
+    display: none;
+  }
+}
+@media screen and (max-width: 940px) {
+  .sliderContainer .carousel-caption h1 {
+    font-size: 3rem;
+    margin-top: -1rem;
+  }
+  .carousel-caption .btn,
+  .carousel-caption p {
+    margin-top: 0;
+  }
+}

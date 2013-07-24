@@ -1,0 +1,22 @@
+﻿@import "_variables.less";
+
+// IE7 doesn't support box-sizing border-box so set the width for the browser icons accordingly when displaying the "unsupported browser" overlay
+.browser-icon {
+    width: 55px;
+}
+
+// same actually in IE7 for .browser box
+.browser {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+// same in IE7 for .btn inside the legacy browser overlay (the download btns aligned on the same line)
+#legacy-browser-modal .btn {
+    left: 0;
+}
+
+// IE7 doesn't understand max-width sometimes. So do this hack
+.container {
+    *max-width: @container-large-desktop;
+}

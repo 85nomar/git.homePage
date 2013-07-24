@@ -1,0 +1,24 @@
+﻿// Custom mixin to generate uneven columns
+.make-uneven-column(@columns) {
+    @media (min-width: @grid-float-breakpoint) {
+    float: left;
+    // Calculate width based on number of columns available
+    width: percentage(@columns / @grid-columns-uneven);
+    }
+    // Prevent columns from collapsing when empty
+    min-height: 1px;
+    // Set inner padding as gutters instead of margin
+    padding-left:  (@grid-gutter-width / 2);
+    padding-right: (@grid-gutter-width / 2);
+}
+
+.make-uneven-column(@columns; unresponsive) {
+    float: left;
+    // Calculate width based on number of columns available
+    width: percentage(@columns / @grid-columns-uneven);
+    // Prevent columns from collapsing when empty
+    min-height: 1px;
+    // Set inner padding as gutters instead of margin
+    padding-left:  (@grid-gutter-width / 2);
+    padding-right: (@grid-gutter-width / 2);
+}

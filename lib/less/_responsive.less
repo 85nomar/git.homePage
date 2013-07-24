@@ -1,0 +1,102 @@
+﻿/// <reference path="_variables.less" />
+/// <reference path="bootstrap/variables.less" />
+/// <reference path="bootstrap/mixins.less" />
+
+/*********************************************************************************************
+* custom styles on large desktops
+**********************************************************************************************/
+@media screen and (max-width: @screen-laptop-default) {
+    .centeredBox {
+        margin: 0 @default-box-margin;
+    }
+
+    .floatingToolbar {
+        left: @default-box-margin;
+        right: @default-box-margin;
+    }
+    .listing-online .floatingToolbar,
+    .listing-aftersales .floatingToolbar {
+        left: calc(16.6% ~"+" @default-box-margin);
+        right: @default-box-margin;
+    }
+}
+
+@media screen and (min-width: @screen-tablet) {
+    // overwrites default modal width for the rating-details view
+    #rating_detail {
+        .modal-dialog {
+            width: 760px;
+            margin-left: -380px;
+        }
+    }
+}
+
+/*********************************************************************************************
+* screens @screen-desktop (which is default bootstrap breakpoint for .col-lg classes
+**********************************************************************************************/
+
+@media screen and (max-width: @screen-desktop) {
+    .floatingToolbar {
+        left: @default-box-margin;
+        right: @default-box-margin;
+    }
+
+    .listing-online .floatingToolbar,
+    .listing-aftersales .floatingToolbar {
+        left: @default-box-margin;
+    }
+}
+
+/*********************************************************************************************
+* custom styles on HD desktops 
+**********************************************************************************************/
+@media screen and (min-width: @container-hd-desktop) {
+	.searchPanel {
+		float: left;
+	}
+}
+
+/*********************************************************************************************
+* custom styles on tablets
+**********************************************************************************************/
+@media screen and (max-width: @container-tablet) {
+    .toolbar .forminline {
+		margin-top: 10px;
+	}  
+    .mainMenu {
+        height: auto;      
+    }
+}
+
+/*********************************************************************************************
+* Slider on homepage on small desktops
+**********************************************************************************************/
+@media screen and (max-width: @container-large-desktop) {
+    .carousel-control {
+		display: none;
+	}
+    .sliderContainer .carousel-caption.container {
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: @container-desktop) {
+    .sliderContainer .carousel-caption.container {
+        padding-left: 15px;
+    }
+}
+@media screen and (max-width: @container-tablet) {
+    .sliderContainer .carousel-caption.container > div {
+        display: none;
+    }
+}
+
+@media screen and (max-width: @container-desktop) {
+    .sliderContainer .carousel-caption h1 {
+        font-size: 3rem;
+        margin-top: -1rem;
+    }
+    .carousel-caption .btn,
+    .carousel-caption p {
+        margin-top: 0;
+    }
+}
