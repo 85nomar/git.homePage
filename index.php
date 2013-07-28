@@ -6,8 +6,7 @@ $Layout->start(); ?>
 
 
 <section id="container" class="container">
-
-
+content here
 </section>
 
 <?php $Layout->end(); ?>
