@@ -77,9 +77,15 @@
                                         <input type="text" class="form-control">
                                         <span class="input-group-addon">PLZ</span>
                                     </div>
-                                    <div class="input-group">
+                                    <!--<div class="input-group">
                                         <input type="text" class="form-control">
                                         <span class="input-group-addon">KM</span>
+                                    </div>-->
+                                    <div>
+                                        <p><input type="radio" name="radio-group" checked> keine Angabe</p>
+                                        <p><input type="radio" name="radio-group"> 10 KM</p>
+                                        <p><input type="radio" name="radio-group"> 15 KM</p>
+                                        <p><input type="radio" name="radio-group"> 20 KM</p>
                                     </div>
                                 </div><!-- /.col-lg-12 -->
                                 <ul class="nav">

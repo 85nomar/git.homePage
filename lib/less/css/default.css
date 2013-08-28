@@ -236,7 +236,9 @@ header {
   margin-top: 0;
   border-top-right-radius: 0;
   padding: 10px;
-  width: 200px;
+}
+#advancedSearch .open .dropdown-menu p {
+  margin-bottom: 1px;
 }
 #advancedSearch .open .dropdown-menu li {
   list-style: none;
