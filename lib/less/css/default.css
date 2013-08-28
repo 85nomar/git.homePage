@@ -42,40 +42,6 @@ legend,
   font-family: "MetaOTBold", Georgia, "Times New Roman", Times, serif;
 }
 /*********************************************************************************************
-* Custom Ricardo Font Styles 
-**********************************************************************************************/
-@font-face {
-  font-family: 'MetaOTBold';
-  src: url('/assets/public/fonts/MetaWeb-Bold.eot');
-  src: url('/assets/public/fonts/MetaWeb-Bold.eot?#iefix') format('embedded-opentype'), url("/assets/public/fonts/MetaWeb-Bold.woff") format("woff"), url("/assets/public/fonts/MetaWeb-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'MetaOTBook';
-  src: url('/assets/public/fonts/MetaWeb-Book.eot');
-  src: url('/assets/public/fonts/MetaWeb-Book.eot?#iefix') format('embedded-opentype'), url('/assets/public/fonts/MetaWeb-Book.woff') format('woff'), url('/assets/public/fonts/MetaWeb-Book.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'MetaOTLight';
-  src: url('/assets/public/fonts/MetaWeb-Light.eot');
-  src: url('/assets/public/fonts/MetaWeb-Light.eot?#iefix') format('embedded-opentype'), url('/assets/public/fonts/MetaWeb-Light.woff') format('woff'), url('/assets/public/fonts/MetaWeb-Light.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-legend,
-#sideNav {
-  font-family: "MetaOTBold", Georgia, "Times New Roman", Times, serif;
-}
-/*********************************************************************************************
 * custom styles on large desktops
 **********************************************************************************************/
 @media screen and (max-width: 1280px) {
@@ -160,4 +126,128 @@ legend,
   .carousel-caption p {
     margin-top: 0;
   }
+}
+/*
+  Author: ricardo.ch AG
+  Description:    default styles for the ricardo.ch Homepage
+  Date: 28.08.2013
+*/
+/*************** DEFAULT *******************/
+.container {
+  min-width: 1170px !important;
+  max-width: 1170px !important;
+  width: 1170px !important;
+}
+/*************** BUTTONS *******************/
+.btn-mousy {
+  color: #333333;
+  font-weight: normal;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+}
+.btn-mousy:active,
+.btn-mousy:focus,
+.btn-mousy.active {
+  background-color: #c5c5c5;
+  border-color: #c5c5c5;
+}
+.btn-mousy:hover {
+  border-color: #c5c5c5;
+}
+.btn-trigger {
+  color: #fff;
+  background-color: #f7941d;
+  border-color: #f7941d;
+}
+.btn-trigger:hover,
+.btn-trigger:focus,
+.btn-trigger:active,
+.btn-trigger.active {
+  background-color: #cb7207;
+  border-color: #cb7207;
+}
+/*************** HOMEPAGE *******************/
+header {
+  margin: 15px 0;
+}
+#logo {
+  width: 168px;
+  height: 30px;
+}
+#language-picker {
+  margin-right: 5px;
+}
+#mainnav a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#menuLogin.open a {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#menuLogin .well {
+  width: 310px;
+  margin-top: 0;
+  border-top-right-radius: 0;
+  border: none;
+  padding: 10px 0;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+#searchBar {
+  background-color: #f7941d;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+}
+#searchBar .search-field input {
+  border-color: transparent;
+  border-right-color: #c5c5c5;
+}
+#searchBar .search-field button.dropdown-toggle {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-color: transparent;
+  font-weight: normal;
+}
+#searchBar .search-field button.btn-primary {
+  margin-left: -5px;
+  font-weight: normal;
+}
+#advancedSearch {
+  display: inline-block;
+}
+#advancedSearch .btn {
+  font-weight: normal;
+  color: #fff;
+  border-color: #f7941d;
+  border-radius: 4px 4px 0 0;
+}
+#advancedSearch .btn:hover {
+  text-decoration: underline;
+}
+#advancedSearch .open .btn {
+  background: #f2f2f2;
+  color: #333333;
+  border-color: #f2f2f2;
+  text-decoration: none;
+}
+#advancedSearch .open .dropdown-menu {
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+  margin-top: 0;
+  border-top-right-radius: 0;
+  padding: 10px;
+  width: 200px;
+}
+#advancedSearch .open .dropdown-menu li {
+  list-style: none;
+}
+#advancedSearch .open .dropdown-menu li a {
+  padding: 0 20px;
+}
+#advancedSearch .open .input-group {
+  margin-bottom: 5px;
+}
+#advancedSearch .dropdown-menu {
+  right: 0;
+  left: auto;
 }

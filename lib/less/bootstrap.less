@@ -1,69 +1,58 @@
-﻿/* Import Bootstrap 3.0 Core*/
+﻿/*!
+ * Bootstrap v3.0.0
+ *
+ * Copyright 2013 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world by @mdo and @fat.
+ */
 
 // Core variables and mixins
-@import "bootstrap/variables.less";
-@import "_variables.less"; // overwrite with Ricardo.ch Assistant defaults
-@import "bootstrap/mixins.less";
+@import "../bootstrap/less/variables.less";
+@import "../bootstrap/less/mixins.less";
 
-// Reset
-@import "bootstrap/normalize.less";
-@import "bootstrap/print.less";
+  // Reset
+@import "../bootstrap/less/normalize.less";
+@import "../bootstrap/less/print.less";
 
-// Core CSS
-@import "bootstrap/scaffolding.less";
-@import "bootstrap/type.less";
-@import "bootstrap/code.less";
-@import "bootstrap/grid.less";
+  // Core CSS
+@import "../bootstrap/less/scaffolding.less";
+@import "../bootstrap/less/type.less";
+@import "../bootstrap/less/code.less";
+@import "../bootstrap/less/grid.less";
+@import "../bootstrap/less/tables.less";
+@import "../bootstrap/less/forms.less";
+@import "../bootstrap/less/buttons.less";
 
-@import "bootstrap/tables.less";
-@import "bootstrap/forms.less";
-@import "bootstrap/buttons.less";
+  // Components
+@import "../bootstrap/less/component-animations.less";
+@import "../bootstrap/less/dropdowns.less";
+@import "../bootstrap/less/button-groups.less";
+@import "../bootstrap/less/input-groups.less";
+@import "../bootstrap/less/navs.less";
+@import "../bootstrap/less/navbar.less";
+@import "../bootstrap/less/breadcrumbs.less";
+@import "../bootstrap/less/pagination.less";
+@import "../bootstrap/less/pager.less";
+@import "../bootstrap/less/labels.less";
+@import "../bootstrap/less/badges.less";
+@import "../bootstrap/less/jumbotron.less";
+@import "../bootstrap/less/thumbnails.less";
+@import "../bootstrap/less/alerts.less";
+@import "../bootstrap/less/progress-bars.less";
+@import "../bootstrap/less/media.less";
+@import "../bootstrap/less/list-group.less";
+@import "../bootstrap/less/panels.less";
+@import "../bootstrap/less/wells.less";
+@import "../bootstrap/less/close.less";
 
-// Components: common
-@import "bootstrap/component-animations.less";
-@import "bootstrap/dropdowns.less";
-@import "bootstrap/list-group.less";
-@import "bootstrap/panels.less";
-@import "bootstrap/wells.less";
-@import "bootstrap/close.less";
+  // Components w/ JavaScript
+@import "../bootstrap/less/modals.less";
+@import "../bootstrap/less/tooltip.less";
+@import "../bootstrap/less/popovers.less";
+@import "../bootstrap/less/carousel.less";
 
-// Components: Nav
-@import "bootstrap/navs.less";
-@import "bootstrap/navbar.less";
-@import "bootstrap/button-groups.less";
-@import "bootstrap/breadcrumbs.less";
-@import "bootstrap/pagination.less";
-@import "bootstrap/pager.less";
-
-// Components: Popovers
-@import "bootstrap/modals.less";
-@import "bootstrap/tooltip.less";
-@import "bootstrap/popovers.less";
-
-// Components: Misc
-@import "bootstrap/alerts.less";
-@import "bootstrap/thumbnails.less";
-@import "bootstrap/media.less";
-@import "bootstrap/labels.less";
-@import "bootstrap/badges.less";
-@import "bootstrap/progress-bars.less";
-@import "bootstrap/accordion.less";
-@import "bootstrap/carousel.less";
-@import "bootstrap/jumbotron.less";
-
-// Utility classes
-@import "bootstrap/utilities.less"; // Has to be last to override when necessary
-@import "bootstrap/responsive-utilities.less";
-
-/* include Font-icon library */
-@import "bootstrap-glyphicons/bootstrap-glyphicons.less";
-
-/* Overriade Bootstrap Core defaults with custom Ricardo Assistant styles */
-@import "_bootstrap-core-overwrites.less";
-
-/* Add deprecated functions from Bootstrap 2.3.1 */
-@import "_bootstrap-core-deprecated.less";
-
-/* Custom Addons for which you want to use bootstrap mixins / classes / variables */
-@import "_bootstrap-core-addons.less";
-
+  // Utility classes
+@import "../bootstrap/less/utilities.less";
+@import "../bootstrap/less/responsive-utilities.less";

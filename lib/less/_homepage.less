@@ -1,0 +1,148 @@
+/*
+  Author: ricardo.ch AG
+  Description:    default styles for the ricardo.ch Homepage
+  Date: 28.08.2013
+*/
+
+/*************** DEFAULT *******************/
+.container {
+  min-width:1170px !important;
+  max-width:1170px !important;
+  width:1170px !important;
+}
+
+/*************** BUTTONS *******************/
+.btn-mousy {
+  color:@gray-darker;
+  font-weight:normal;
+  background-color:@gray-lighter;
+  border-color:@gray-lighter;
+
+  &:active, &:focus ,&.active {
+    background-color: @gray-light;
+    border-color: @gray-light;
+  }
+  &:hover {
+    border-color:@gray-light;
+  }
+}
+
+.btn-trigger {
+  color: #fff;
+  background-color: @orange;
+  border-color: @orange;
+
+  &:hover, &:focus, &:active, &.active {
+    background-color: @orange-darken;
+    border-color: @orange-darken;
+  }
+}
+
+/*************** HOMEPAGE *******************/
+
+//top Bar
+header {
+  margin:15px 0;
+}
+#logo {
+  width:168px;
+  height:30px;
+}
+#language-picker {
+  margin-right:5px;
+}
+#mainnav a {
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+#menuLogin {
+
+  &.open a {
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+  }
+
+  .well {
+    width:310px;
+    margin-top:0;
+    border-top-right-radius:0;
+    border:none;
+    padding:10px 0;
+    box-shadow:0 3px 5px rgba(0,0,0, .2);
+
+  }
+}
+
+//Search Bar
+#searchBar {
+  background-color:@orange;
+  box-shadow:inset 0 3px 5px rgba(0,0,0, .2);
+  padding:10px 0;
+}
+
+#searchBar .search-field {
+  input {
+    border-color:transparent;
+    border-right-color:@gray-light;
+  }
+
+  button.dropdown-toggle {
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    border-color:transparent;
+    font-weight:normal;
+  }
+  button.btn-primary {
+    margin-left: -5px;
+    font-weight:normal;
+  }
+}
+
+#advancedSearch {
+
+  display: inline-block;
+
+  .btn {
+    font-weight:normal;
+    color:#fff;
+    border-color:@orange;
+    border-radius:4px 4px 0 0;
+
+    &:hover {
+      text-decoration:underline;
+    }
+  }
+  .open {
+    .btn {
+      background:@gray-lighter;
+      color:@darkergrey;
+      border-color:@gray-lighter;
+      text-decoration: none;
+    }
+    .dropdown-menu {
+      background-color:@gray-lighter;
+      border-color:@gray-lighter;
+      margin-top:0;
+      border-top-right-radius:0;
+      padding:10px;
+      width:200px;
+
+      li {
+        list-style:none;
+
+        a {
+          padding:0 20px;
+        }
+      }
+    }
+    .input-group {
+      margin-bottom:5px;
+    }
+}
+
+  .dropdown-menu {
+    right:0;
+    left:auto;
+  }
+}

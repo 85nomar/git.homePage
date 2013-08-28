@@ -5,7 +5,7 @@ $Layout->title = 'Sellingform';
 $Layout->start(); ?>
 
 
-<section id="container" class="container">
+<section id="wrapper">
 content here
 </section>
 
