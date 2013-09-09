@@ -10,7 +10,10 @@
 // Global values
 // --------------------------------------------------
 /* Ricardo fonts path */
-@ricardo-font-path: "/assets/public/fonts";
+@ricardo-font-path: "../../../lib/fonts";
+
+/* font awesome path */
+@FontAwesomePath:   "../../../lib/font-awesome/font";
 
 // Ricardo brand colors
 // -------------------------
@@ -45,6 +48,22 @@
 // Ricardo image base path
 // --------------------------
 @img-base-path: "/assets/public/img";
+
+
+
+/* cocials */
+
+@facebook: #f7941d; // CI color
+@facebook-light: #fbb04c; // CI color
+@facebook-darken: darken(@orange, 13%); // no CI color.
+@facebook-lighten: lighten(@orange, 10%); // no CI color. Use e.g. as gradient-start-color
+
+
+@facebook-darker:            lighten(#133783, 13.5%); // #222
+@facebook-dark:              lighten(#133783, 20%);   // #333
+@facebook:                   lighten(#133783, 33.5%); // #555
+@facebook-light:             lighten(#133783, 60%);   // #999
+@facebook-lighter:           lighten(#133783, 93.5%); // #eee
 
 /*********************************************************************************************
 * Bootstrap variables.less from here on
